@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- Начало: Данный блок удалять нельзя -->
@@ -15,18 +22,63 @@
         </a>
         <div>
             <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+                    href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
             </p>
             <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a>
+                пользователь получил оплату за верстку этого макета.
             </p>
         </div>
     </div>
     <!-- Конец -->
 
-    <div class="main">
-        В данном блоке размещается верстка
+    <div class="wrapper">
+
+        <p class="subscription-offer">
+            Sign up for our newsletter to get 10% off your first order
+        </p>
+        <header class="header">
+            <div class="header__container">
+                <ul class="header__menu">
+                    <li class="menu__item"><a href="#">Shop</a></li>
+                    <li class="menu__item"><a href="#">About</a></li>
+                    <li class="menu__item"><a href="#">Strange Mind Blog</a></li>
+                </ul>
+                <div class="header__logo"></div>
+                <div class="header__cart">
+                    <a href="#">Cart</a>
+                </div>
+            </div>
+        </header>
+        <section class="first-screen">
+            <div class="first-screen__container">
+                <h1 class="first-screen__title title">Potent Plant Elixirs for Body & Spirit</h1>
+                <p class="first-screen__info">
+                    Tinctures of balancing adaptogens, healing cannabinoids (CBD, CBDa, CBN), and mood-enhancing
+                    terpenes
+                </p>
+                <button class="first-screen__button button">Shop our Products</button>
+            </div>
+
+        </section>
+        <section class="press">
+            <div class="press__container">
+                <div class="press__list">
+                    <img id="forbes" src="assets/images/forbes.png" alt="forbes">
+                    <img id="rolling" src="assets/images/rolling-stones.png" alt="rolling">
+                    <img id="allure" src="assets/images/allure.png" alt="allure">
+                    <img id="byrdie" src="assets/images/byrdie.png" alt="byrdie">
+                    <img id="popshugar" src="assets/images/popshugar.png" alt="popshugar">
+                    <img id="elle" src="assets/images/elle.png" alt="elle">
+                    <img id="gq" src="assets/images/gq.png" alt="gq">
+                    <img id="fastcompany" src="assets/images/fastcompany.png" alt="fastcompany">
+                </div>
+            </div>
+            <div class="press__wave"></div>
+        </section>
     </div>
 
 </body>
+
 </html>

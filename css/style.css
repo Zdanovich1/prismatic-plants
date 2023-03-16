@@ -1,0 +1,289 @@
+/*!Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/*!------------Конец обнуления-------------*/
+
+html {
+   scroll-behavior: smooth;
+}
+
+* {
+   font-family: Roboto, sans-serif;
+   color: rgba(255, 255, 255, 1);
+}
+
+body {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+
+[class*="__container"] {
+   max-width: 1328px;
+   margin: 0px auto;
+}
+
+/*!Переменные*/
+:root {
+   --main-bg-color: rgba(30, 72, 68, 1);
+   --main-info-font-size: 19px;
+   --main-info-line-height: 25px;
+}
+
+/**subscription-offer*/
+
+.subscription-offer {
+   height: 32px;
+   font-size: 14px;
+   line-height: 18.62px;
+   color: rgba(255, 255, 255, 1);
+   background-color: rgba(51, 43, 91, 1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/**header*/
+
+.header {
+   background-color: var(--main-bg-color);
+}
+
+.header__container {
+   height: 83px;
+   padding-bottom: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__menu {
+   display: flex;
+   gap: 32px;
+   margin-left: 18px;
+}
+
+.menu__item a,
+.header__cart a {
+   font-size: 16px;
+   color: rgba(255, 255, 255, 1);
+}
+
+.header__logo {
+   width: 118px;
+   height: 46px;
+   background: url(../assets/icons/logo.svg);
+   position: relative;
+   left: -130px;
+}
+
+/**first-screen*/
+.first-screen {
+   background: url(../assets/images/main-screen.jpg);
+   background-repeat: no-repeat;
+   background-position: center -115px;
+   height: 590px;
+}
+
+.first-screen__container {
+   height: 590px;
+}
+
+.title {
+   font-size: 42px;
+   line-height: 47px;
+   letter-spacing: 0em;
+}
+
+.first-screen__title {
+   width: 430px;
+   font-weight: 400;
+   margin-top: 85px;
+   margin-bottom: 9px;
+}
+
+.first-screen__info {
+   width: 320px;
+   font-size: var(--main-info-font-size);
+   line-height: var(--main-info-line-height);
+   margin-bottom: 25px;
+}
+
+.button {
+   border: 2px solid rgba(255, 255, 255, 1);
+   background: transparent;
+   border-radius: 0px 50px 50px 0px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
+}
+
+.first-screen__button {
+   width: 221px;
+   height: 46px;
+}
+
+.first-screen__title,
+.first-screen__info,
+.first-screen__button {
+   margin-left: 8px;
+}
+
+/**press*/
+
+.press {
+   position: relative;
+   background: rgba(194, 216, 204, 1);
+}
+
+.press__container {
+   height: 131px;
+}
+
+.press__container,
+.press__list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.press__list {
+   margin-left: -25px;
+}
+
+#popshugar {
+   margin-left: 30px;
+   margin-right: 18px;
+}
+
+#byrdie {
+   margin-left: 12px;
+}
+
+#elle {
+   margin-right: -10px;
+}
+
+#rolling,
+#elle,
+#gq {
+   margin-bottom: 10px;
+}
+
+#forbes,
+#allure {
+   margin-bottom: 12px;
+}
+
+#fastcompany {
+   margin-right: 5px;
+   margin-bottom: 18px;
+}
+
+.press__wave {
+   width: 100%;
+   height: 181px;
+   background: url(../assets/images/wave.png);
+   background-position: center 0;
+   background-repeat: no-repeat;
+   position: absolute;
+   left: 0;
+   top: -169px;
+}
