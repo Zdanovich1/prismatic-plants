@@ -382,3 +382,40 @@ body {
    text-align: center;
    text-transform: uppercase;
 }
+
+/**prod-description*/
+
+.prod-description {
+   background: rgba(193, 82, 68, 1);
+   height: 1050px;
+   display: flex;
+}
+
+.prod-description__info {
+   width: 50%;
+   margin-top: 199px;
+   padding: 65px;
+}
+
+.prod-description__img {
+   width: 50%;
+   height: 720px;
+   margin-top: 65px;
+   background: url(../assets/images/product-image.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 223px 0px 0px 223px;
+}
+
+.prod-description__title,
+.prod-description__text {
+   color: rgba(250, 233, 214, 1);
+}
+
+.prod-description__title {
+   margin-bottom: 12px;
+}
+
+.prod-description__text {
+   margin-bottom: 17px;
+}
