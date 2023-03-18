@@ -96,6 +96,7 @@ html {
 
 * {
    font-family: Roboto, sans-serif;
+   font-weight: 400;
    color: rgba(255, 255, 255, 1);
 }
 
@@ -124,7 +125,12 @@ body {
 :root {
    --main-bg-color: rgba(30, 72, 68, 1);
    --main-info-font-size: 19px;
-   --main-info-line-height: 25px;
+   --main-info-line-height: 25.54px;
+}
+
+.info-text {
+   font-size: var(--main-info-font-size);
+   line-height: var(--main-info-line-height);
 }
 
 /**subscription-offer*/
@@ -195,14 +201,12 @@ body {
 .first-screen__title {
    width: 430px;
    font-weight: 400;
-   margin-top: 85px;
+   padding-top: 85px;
    margin-bottom: 9px;
 }
 
 .first-screen__info {
    width: 320px;
-   font-size: var(--main-info-font-size);
-   line-height: var(--main-info-line-height);
    margin-bottom: 25px;
 }
 
@@ -286,4 +290,56 @@ body {
    position: absolute;
    left: 0;
    top: -169px;
+}
+
+/**products*/
+
+.products {
+   display: flex;
+}
+
+.product {
+   width: 50%;
+   height: 860px;
+   position: relative;
+}
+
+#product-day {
+   background: url(../assets/images/product-day.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+#product-night {
+   background: url(../assets/images/product-night.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.product__info {
+   width: 360px;
+   position: absolute;
+   left: 64px;
+   bottom: 64px;
+}
+
+.product__title {
+   font-size: 23px;
+   line-height: var(--main-info-line-height);
+   margin-bottom: 12px;
+}
+
+.product__description {
+   margin-bottom: 60px;
+   width: 215px;
+}
+
+#product-night .product__info .product__description {
+   width: 220px;
+   color: rgba(155, 154, 199, 1);
+}
+
+.product__button {
+   width: 232px;
+   height: 43px;
 }
