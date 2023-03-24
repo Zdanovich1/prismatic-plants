@@ -716,3 +716,141 @@ body {
    text-transform: uppercase;
    margin-top: 10px;
 }
+
+/**footer*/
+
+.footer {
+   height: 594px;
+   display: flex;
+}
+
+.footer__navigation {
+   width: 680px;
+   background-color: rgba(194, 216, 204, 1);
+}
+
+.footer__navigation,
+.footer__embrace,
+.footer__before-you-go {
+   padding-top: 65px;
+   padding-left: 65px;
+   padding-right: 50px;
+}
+
+.footer__before-you-go {
+   padding-top: 32px;
+}
+
+.footer__embrace {
+   height: 407px;
+   background-color: rgba(30, 72, 68, 1);
+}
+
+.embrace__info {
+   margin-right: 50px;
+}
+
+.footer__before-you-go {
+   height: 187px;
+   background-color: rgba(250, 233, 214, 1);
+}
+
+.navigation__list {
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+   margin-bottom: 10px;
+}
+
+.footer-main-text {
+   font-size: 23px;
+   line-height: 30px;
+   color: var(--main-bg-color);
+}
+
+.footer-info-text {
+   font-size: 16px;
+   line-height: 21px;
+   color: rgba(255, 255, 255, 1);
+}
+
+.navigation__socials {
+   display: flex;
+   gap: 9px;
+   margin-top: 15px;
+   margin-bottom: 31px;
+}
+
+.navigation__pay {
+   display: flex;
+   margin-bottom: 71px;
+}
+
+.pay__card {
+   cursor: pointer;
+}
+
+.navigation__copiright {
+   font-size: 14px;
+   line-height: 19px;
+   color: var(--main-bg-color);
+}
+
+.embrace__title {
+   color: rgba(194, 216, 204, 1);
+   margin-bottom: 15px;
+}
+
+.embrace__info {
+   margin-bottom: 20px;
+}
+
+.footer__before-you-go {
+   display: flex;
+   gap: 100px;
+   position: relative;
+}
+
+.footer__before-you-go::after {
+   content: "";
+   position: absolute;
+   top: -128px;
+   left: 0;
+   width: 100%;
+   height: 129px;
+   background: url(../assets/images/footer-wave.png);
+   background-repeat: no-repeat;
+}
+
+.before-you-go__title {
+   font-weight: 700;
+   flex-shrink: 0;
+}
+
+.before-you-go__info {
+   flex-shrink: 1;
+}
+
+.before-you-go__info p {
+   color: var(--main-bg-color);
+   margin-bottom: 16px;
+}
+
+.embrace__form input {
+   background: transparent;
+   width: 298px;
+   height: 40px;
+   border-bottom: 2px solid rgba(255, 255, 255, 1);
+   margin-right: 30px;
+}
+
+::placeholder {
+   font-size: 16px;
+   line-height: 21px;
+   color: #FFFFFF;
+}
+
+.footer__button {
+   width: 180px;
+   height: 36px;
+}
